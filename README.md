@@ -61,12 +61,12 @@ graph TD
     User((User)) -->|Input| Streamlit[Streamlit Frontend]
     Streamlit -->|API Request| FastAPI[FastAPI Backend]
     FastAPI --> Runner[Google ADK Runner]
-    Runner --> Session[Session (State Management)]
-    Session --> Manager[ManagerAgent (Orchestrator)]
+    Runner --> Session["Session (State Management)"]
+    Session --> Manager["ManagerAgent (Orchestrator)"]
     Manager -->|Delegates| Research[ResearchAgent]
     Manager -->|Delegates| Analyst[AnalystAgent]
     Manager -->|Delegates| Writer[WriterAgent]
-    Research -->|Uses| Tools[Web Search / URL Reader]
+    Research -->|Uses| Tools["Tools (Search / URL Reader)"]
     Writer -->|Generates| Response[Final Output]
     Response --> FastAPI
     FastAPI --> Streamlit
