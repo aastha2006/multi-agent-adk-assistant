@@ -1,0 +1,9 @@
+google-adk
+google-generativeai
+fastapi
+uvicorn
+chromadb
+python-dotenv
+requests
+pydantic
+streamlit
